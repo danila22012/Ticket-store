@@ -10,7 +10,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
   }
-  // each([1,2,4,'12','vasa'], el=>console.log(el))
+  each([1,2,4,'12','vasa'], el=>console.log(el))
+  each([])
+  each([{key:1},{key:2}], el=>console.log(el))
+
+
+
+
 
   //FININDEX
 
@@ -21,8 +27,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     return -1;
   }
-  // console.log(find(array, el=>array[el] === 5 ? el : -1)); 
+
+  console.log(find(array, el=>array[el] === 5 ? el : -1)); 
   
+
+
 
   //FILTER
 
@@ -35,7 +44,10 @@ document.addEventListener("DOMContentLoaded", function() {
     return tempArr
   }
 
-  // console.log(filt(array, el=> el == 2 ? true : false)); 
+  console.log(filt(array, el=> el == 2 ? true : false)); 
+  console.log(filt([1,2,3,4,5,6,6,2,2,2,2,1,1,2,21,], el=> el >= 2 ? true : false)); 
+  console.log(filt([1,2,3,4,5,6,6,2,2,2,2,1,1,2,21,], el=> el <= 0 ? true : false)); 
+
 
 
 });

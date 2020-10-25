@@ -7,9 +7,491 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,800;1,900&display=swap" rel="stylesheet"> <!--fonts-->
     <script defer src="js/scripts.min.js"></script>
 </head>
 <body>
-    Hello world
+    <aside class="aside">
+        <div class="aside__header">
+            <div class="logo aside__logo">
+                <div class="aside__logo--d">
+                    <div class="logo__circle">
+                    </div>
+                </div>
+                <span class="aside__logo--text">Dashboard</span>
+            </div>
+            <nav class="aside__nav">
+                <ul class="aside__list">
+                    <li class="aside__list--item">
+                        
+                        <a class="aside__list--a" href="#">
+                            <svg class="list__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="list__icon--opacity" opacity="0.4" d="M15.5232 8.94116H8.54412L13.1921 13.5891C13.3697 13.7667 13.6621 13.7812 13.8447 13.6091C14.9829 12.5367 15.7659 11.0912 15.9956 9.46616C16.035 9.18793 15.8041 8.94116 15.5232 8.94116ZM15.0576 7.03528C14.8153 3.52176 12.0076 0.714119 8.49412 0.471767C8.22589 0.453237 8 0.679413 8 0.948236V7.5294H14.5815C14.8503 7.5294 15.0762 7.30352 15.0576 7.03528ZM6.58824 8.94116V1.96206C6.58824 1.68118 6.34147 1.45029 6.06353 1.48971C2.55853 1.985 -0.120585 5.04705 0.00412089 8.71675C0.132356 12.4856 3.37736 15.5761 7.14794 15.5288C8.6303 15.5103 10 15.0326 11.1262 14.2338C11.3585 14.0691 11.3738 13.727 11.1724 13.5256L6.58824 8.94116Z" fill="#DDE2FF"/>
+                            </svg>
+                            <span>Overview</span>  
+                        </a>
+                    </li>
+                    <li class="aside__list--item">
+                        
+                        <a class="aside__list--a" href="#">
+                            <svg class="list__icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="list__icon--opacity" opacity="0.4" d="M3.55556 3.33334H12.4444V8.66667H3.55556V3.33334ZM14.6667 6C14.6667 6.73639 15.2636 7.33334 16 7.33334V10C16 10.7364 15.4031 11.3333 14.6667 11.3333H1.33333C0.596944 11.3333 0 10.7364 0 10V7.33334C0.736389 7.33334 1.33333 6.73639 1.33333 6C1.33333 5.26362 0.736389 4.66667 0 4.66667V2.00001C0 1.26362 0.596944 0.666672 1.33333 0.666672H14.6667C15.4031 0.666672 16 1.26362 16 2.00001V4.66667C15.2636 4.66667 14.6667 5.26362 14.6667 6ZM13.3333 3.11112C13.3333 2.74292 13.0349 2.44445 12.6667 2.44445H3.33333C2.96514 2.44445 2.66667 2.74292 2.66667 3.11112V8.88889C2.66667 9.25709 2.96514 9.55556 3.33333 9.55556H12.6667C13.0349 9.55556 13.3333 9.25709 13.3333 8.88889V3.11112Z" fill="#9FA2B4"/>
+                            </svg>    
+                            <span>Tickets</span>  
+                        </a>
+                    </li>
+                    <li class="aside__list--item">
+    
+                       <a class="aside__list--a" href="#">
+                            <svg class="list__icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="list__icon--opacity" opacity="0.4" d="M2.4 5.19999C3.2825 5.19999 4 4.48249 4 3.59999C4 2.71749 3.2825 1.99999 2.4 1.99999C1.5175 1.99999 0.8 2.71749 0.8 3.59999C0.8 4.48249 1.5175 5.19999 2.4 5.19999ZM13.6 5.19999C14.4825 5.19999 15.2 4.48249 15.2 3.59999C15.2 2.71749 14.4825 1.99999 13.6 1.99999C12.7175 1.99999 12 2.71749 12 3.59999C12 4.48249 12.7175 5.19999 13.6 5.19999ZM14.4 5.99999H12.8C12.36 5.99999 11.9625 6.17749 11.6725 6.46499C12.68 7.01749 13.395 8.01499 13.55 9.2H15.2C15.6425 9.2 16 8.84249 16 8.39999V7.59999C16 6.71749 15.2825 5.99999 14.4 5.99999ZM8 5.99999C9.5475 5.99999 10.8 4.74749 10.8 3.19999C10.8 1.65249 9.5475 0.399994 8 0.399994C6.4525 0.399994 5.2 1.65249 5.2 3.19999C5.2 4.74749 6.4525 5.99999 8 5.99999ZM9.92 6.79999H9.7125C9.1925 7.04999 8.615 7.19999 8 7.19999C7.385 7.19999 6.81 7.04999 6.2875 6.79999H6.08C4.49 6.79999 3.2 8.08999 3.2 9.67999V10.4C3.2 11.0625 3.7375 11.6 4.4 11.6H11.6C12.2625 11.6 12.8 11.0625 12.8 10.4V9.67999C12.8 8.08999 11.51 6.79999 9.92 6.79999ZM4.3275 6.46499C4.0375 6.17749 3.64 5.99999 3.2 5.99999H1.6C0.7175 5.99999 0 6.71749 0 7.59999V8.39999C0 8.84249 0.3575 9.2 0.8 9.2H2.4475C2.605 8.01499 3.32 7.01749 4.3275 6.46499Z" fill="#9FA2B4"/>
+                            </svg>
+                            <span>Contacts</span>  
+                        </a>
+                    </li>
+                    <li class="aside__list--item">
+    
+                       
+                        <a class="aside__list--a" href="#">
+                            <svg class="list__icon" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="list__icon--opacity" opacity="0.4" d="M7 8C9.20938 8 11 6.20937 11 4C11 1.79063 9.20938 0 7 0C4.79063 0 3 1.79063 3 4C3 6.20937 4.79063 8 7 8ZM9.99375 9.01875L8.5 15L7.5 10.75L8.5 9H5.5L6.5 10.75L5.5 15L4.00625 9.01875C1.77812 9.125 0 10.9469 0 13.2V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V13.2C14 10.9469 12.2219 9.125 9.99375 9.01875Z" fill="#9FA2B4"/>
+                            </svg>     
+                            <span>Tasks</span>  
+                        </a>
+                    </li>
+                    <li class="aside__list--item">
+                        
+                       
+                        <a class="aside__list--a" href="#">
+                            <svg class="list__icon"  width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="list__icon--opacity" opacity="0.4" d="M14 11.25V0.75C14 0.334375 13.6656 0 13.25 0H3C1.34375 0 0 1.34375 0 3V13C0 14.6562 1.34375 16 3 16H13.25C13.6656 16 14 15.6656 14 15.25V14.75C14 14.5156 13.8906 14.3031 13.7219 14.1656C13.5906 13.6844 13.5906 12.3125 13.7219 11.8313C13.8906 11.6969 14 11.4844 14 11.25ZM4 4.1875C4 4.08437 4.08437 4 4.1875 4H10.8125C10.9156 4 11 4.08437 11 4.1875V4.8125C11 4.91563 10.9156 5 10.8125 5H4.1875C4.08437 5 4 4.91563 4 4.8125V4.1875ZM4 6.1875C4 6.08437 4.08437 6 4.1875 6H10.8125C10.9156 6 11 6.08437 11 6.1875V6.8125C11 6.91563 10.9156 7 10.8125 7H4.1875C4.08437 7 4 6.91563 4 6.8125V6.1875ZM11.9187 14H3C2.44688 14 2 13.5531 2 13C2 12.45 2.45 12 3 12H11.9187C11.8594 12.5344 11.8594 13.4656 11.9187 14Z" fill="#9FA2B4"/>
+                            </svg>
+                                
+                            <p>Articles</p>  
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+       <div class="aside__footer">
+           <a href="#" class="aside__options">
+                <svg class="aside__options--img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M15.2313 9.86558L13.9 9.09683C14.0344 8.37183 14.0344 7.62808 13.9 6.90308L15.2313 6.13433C15.3844 6.04683 15.4531 5.86558 15.4031 5.69683C15.0563 4.58433 14.4656 3.57808 13.6938 2.74058C13.575 2.61246 13.3813 2.58121 13.2313 2.66871L11.9 3.43746C11.3406 2.95621 10.6969 2.58433 10 2.34058V0.806206C10 0.631206 9.87814 0.478081 9.70627 0.440581C8.55939 0.184331 7.38439 0.196831 6.29377 0.440581C6.12189 0.478081 6.00002 0.631206 6.00002 0.806206V2.34371C5.30627 2.59058 4.66252 2.96246 4.10002 3.44058L2.77189 2.67183C2.61877 2.58433 2.42814 2.61246 2.30939 2.74371C1.53752 3.57808 0.946895 4.58433 0.60002 5.69996C0.546895 5.86871 0.61877 6.04996 0.771895 6.13746L2.10314 6.90621C1.96877 7.63121 1.96877 8.37496 2.10314 9.09996L0.771895 9.86871C0.61877 9.95621 0.55002 10.1375 0.60002 10.3062C0.946895 11.4187 1.53752 12.425 2.30939 13.2625C2.42814 13.3906 2.62189 13.4218 2.77189 13.3343L4.10314 12.5656C4.66252 13.0468 5.30627 13.4187 6.00314 13.6625V15.2C6.00314 15.375 6.12502 15.5281 6.29689 15.5656C7.44377 15.8218 8.61877 15.8093 9.70939 15.5656C9.88127 15.5281 10.0031 15.375 10.0031 15.2V13.6625C10.6969 13.4156 11.3406 13.0437 11.9031 12.5656L13.2344 13.3343C13.3875 13.4218 13.5781 13.3937 13.6969 13.2625C14.4688 12.4281 15.0594 11.4218 15.4063 10.3062C15.4531 10.1343 15.3844 9.95308 15.2313 9.86558ZM8.00002 10.5C6.62189 10.5 5.50002 9.37808 5.50002 7.99996C5.50002 6.62183 6.62189 5.49996 8.00002 5.49996C9.37814 5.49996 10.5 6.62183 10.5 7.99996C10.5 9.37808 9.37814 10.5 8.00002 10.5Z" fill="#9FA2B4"/>
+                </svg>
+                <span class="aside__options--text">Options</span>
+           </a>
+       </div>
+    </aside>
+    <main class="main">
+        <section class="header">
+            <span class="header__title">Overview</span>
+            <div class="header__info">
+                <div class="anchors header__info--icons">
+                    <div class="search">
+
+                        <svg class="circle" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6.5" cy="6.5" r="5.75" stroke="#C5C7CD" stroke-width="1.5"/>
+                            </svg>
+                        <svg class="vector"  width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5" stroke="#C5C7CD" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                            
+                    </div>
+                    <div class="notification">
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.99999 16C8.10374 16 8.99905 15.1047 8.99905 14H5.00093C5.00093 15.1047 5.89624 16 6.99999 16ZM13.7309 11.3216C13.1272 10.6728 11.9975 9.69687 11.9975 6.5C11.9975 4.07188 10.295 2.12812 7.99937 1.65125V1C7.99937 0.447812 7.55187 0 6.99999 0C6.44812 0 6.00062 0.447812 6.00062 1V1.65125C3.70499 2.12812 2.00249 4.07188 2.00249 6.5C2.00249 9.69687 0.872804 10.6728 0.269054 11.3216C0.0815536 11.5231 -0.00157141 11.7641 -8.9117e-06 12C0.00342859 12.5125 0.405616 13 1.00312 13H12.9969C13.5944 13 13.9969 12.5125 14 12C14.0016 11.7641 13.9184 11.5228 13.7309 11.3216Z" fill="#C5C7CD"/>
+                        </svg>
+                            
+
+                    </div>
+                </div>
+                <div class="header__info--user">
+                    <span class="user__photo--title">Jones Ferdinand</span>
+                    <img class="user__photo main__user--photo " src="assets/img/img1.png" height="100%" width="100%">
+                    <svg class="user__photo--border" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="22.75" stroke="#DFE0EB" stroke-width="1.5"/>
+                        </svg>
+                        
+                </div>
+            </div>
+        </section>
+        <section class="filter">
+            <div class="filter__item">
+                <p class="filter__item--title">Unresolved</p>
+                <p class="filter__item--value">60</p>
+
+            </div>
+            <div class="filter__item">
+                <p class="filter__item--title">Overdue</p>
+                <p class="filter__item--value">16</p>
+            </div>
+            <div class="filter__item">
+                <p class="filter__item--title">Open</p>
+                <p class="filter__item--value">43</p>
+            </div>
+            <div class="filter__item">
+                <p class="filter__item--title">On hold</p>
+                <p class="filter__item--value">64</p>
+            </div>
+        </section>
+        <section class="tasks">
+            <div class="tasks__item unTicket">
+
+                <div class="unTicket__title tasks__item--title">
+                        <div class="unTicket__title--container">
+                            <p class="unTicket__title--title content__title">Unresolved tickets</p>
+                            <p class="unTicket__title--subtitle content__subtitle">Group: <span style="color:#252733;"> Support</span></p>
+                        </div>
+                        <a class="unticket__title--link content__link" href="#">View details</a>
+                </div>
+                <div class="unTicket__descr tasks__item--descr">
+                    <div class="unTicket__descr--item content__descr">
+                        <p class="content__descr--item">Waiting on Feature Request</p>
+                        <p class="content__descr--value">4238</p>
+                    </div>
+                    <div class="unTicket__descr--item content__descr">
+                        <p class="content__descr--item">Awaiting Customer Response</p>
+                        <p class="content__descr--value">1005</p>
+                    </div>
+                    <div class="unTicket__descr--item content__descr">
+                        <p class="content__descr--item">Awaiting Developer Fix</p>
+                        <p class="content__descr--value">914</p>
+                    </div>
+                    <div class="unTicket__descr--item content__descr">
+                        <p class="content__descr--item">Pending</p>
+                        <p class="content__descr--value">281</p>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+            
+
+
+            <div class="tasks__item task">
+                <div class="task__title tasks__item--title">
+                    <div class="task__title--container">
+                        <p class="task__title--title content__title">Tasks</p>
+                        <p class="task__title--subtitle content__subtitle">  Today</p>
+                    </div>
+                    <a class="task__title--link content__link" href="#">View all</a>
+                </div>
+                <div class="unTicket__descr tasks__item--descr">
+                    <div class="unTicket__descr--item content__descr  content__subtitle">
+                        <p class="content__descr--item">Create new task</p>
+                        <p class="content__descr--type createTask default"></p>
+                    </div>
+
+                    <div class="unTicket__descr--item content__descr">
+                        <label class="control control-checkbox">                   
+                                <input type="checkbox" checked="checked" />
+                                 Finish ticket update
+                            <div class="control_indicator"></div>
+                        </label>
+                        <p class="content__descr--type orange">Urgent</p>
+                    </div>
+
+                    <div class="unTicket__descr--item content__descr">
+                        <label class="control control-checkbox">
+                           <input type="checkbox" checked="checked" />
+                           Create new ticket example
+                            <div class="control_indicator"></div>
+                        </label>
+                        <p class="content__descr--type green">New</p>
+                    </div>
+
+                    <div class="unTicket__descr--item content__descr">
+                        <label class="control control-checkbox">
+                            <input type="checkbox" checked="checked" />
+                            Update ticket report
+                            <div class="control_indicator"></div>
+                        </label>
+                        <p class="content__descr--type default">Default</p>
+                    </div>
+                    
+                   
+                    
+                </div>
+            </div>
+        </section>
+        <section class="allTickets">
+            <div class="allTickets__title">
+                <p class="allTickets__title--title">
+                    All tickets
+                </p>
+                <div class="allTickets__title--icons ">
+                    <div class="sortIcon">
+                        <svg class="sortIcon__icon"  width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.128568 2.26839L2.31563 0.125478C2.48647 -0.0418526 2.7636 -0.0417991 2.93434 0.125478L5.12132 2.26839C5.39667 2.53812 5.20059 3.00001 4.81195 3.00001H3.5V11.5714C3.5 11.8081 3.30414 12 3.0625 12H2.1875C1.94586 12 1.75 11.8081 1.75 11.5714V3.00001H0.437935C0.0485329 3.00001 -0.146209 2.53758 0.128568 2.26839ZM6.5625 1.7143H13.5625C13.8041 1.7143 14 1.52243 14 1.28573V0.428584C14 0.191879 13.8041 1.34454e-05 13.5625 1.34454e-05H6.5625C6.32086 1.34454e-05 6.125 0.191879 6.125 0.428584V1.28573C6.125 1.52243 6.32086 1.7143 6.5625 1.7143ZM6.125 4.71429V3.85715C6.125 3.62045 6.32086 3.42858 6.5625 3.42858H11.8125C12.0541 3.42858 12.25 3.62045 12.25 3.85715V4.71429C12.25 4.951 12.0541 5.14287 11.8125 5.14287H6.5625C6.32086 5.14287 6.125 4.951 6.125 4.71429ZM6.125 11.5714V10.7143C6.125 10.4776 6.32086 10.2857 6.5625 10.2857H8.3125C8.55414 10.2857 8.75 10.4776 8.75 10.7143V11.5714C8.75 11.8081 8.55414 12 8.3125 12H6.5625C6.32086 12 6.125 11.8081 6.125 11.5714ZM6.125 8.14286V7.28572C6.125 7.04901 6.32086 6.85715 6.5625 6.85715H10.0625C10.3041 6.85715 10.5 7.04901 10.5 7.28572V8.14286C10.5 8.37957 10.3041 8.57143 10.0625 8.57143H6.5625C6.32086 8.57143 6.125 8.37957 6.125 8.14286Z" fill="#C5C7CD"/>
+                        </svg>
+                        <span class="sortIcon__text" >Sort</span>
+                            
+                    </div>
+                    <div class="filterIcon">
+                        <svg class="filterIcon__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.4369 0H0.563154C0.0635131 0 -0.188604 0.606234 0.165419 0.960258L4.5 5.29549V10.125C4.5 10.3085 4.58955 10.4805 4.73993 10.5858L6.61493 11.8979C6.98484 12.1568 7.5 11.8944 7.5 11.437V5.29549L11.8347 0.960258C12.188 0.606937 11.9376 0 11.4369 0Z" fill="#C5C7CD"/>
+                        </svg>
+                        <span class="filterIcon__text">Filter</span>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="allTickets__subtitle">
+                <p class="allTickets__subtitle--item">Ticket details</p>
+                <p class="allTickets__subtitle--item">Customer name</p>
+                <p class="allTickets__subtitle--item">Date</p>
+                <p class="allTickets__subtitle--item">Priority</p>
+            </div>
+            
+            <div class="allTickets__content">
+                <div class="ticket">
+                    <div class="ticket__owner">
+                        <div class="ticket__owner--photo">
+                           <img class="imgAva" src="assets/img/ava1.png" alt="ava1">
+                        </div>
+                      
+                        <div class="ticket__owner--descr">
+                            <p class="ticket__title">Contact Email not Linked</p>
+                            <p class="ticket__subtitle">Updated 1 day ago</p>
+                        </div>    
+                    </div>
+                    
+                    <div class="ticket__descr--name">
+                            <p class="ticket__title">Tom Cruise</p>
+                            <p class="ticket__subtitle">on 24.05.2019</p>
+                    </div>
+                    <div class="ticket__descr--date">
+                            <p class="ticket__title">May 26, 2019</p>
+                            <p class="ticket__subtitle">6:30 PM</p>
+                     </div>
+                    <div class="ticket__descr--priority ">
+                        <span class="priority red">High</span>
+                            
+                    </div>
+                    <div class="ticket__descr--menu">
+                            I
+                    </div>
+
+                
+                   
+                </div>
+                <div class="ticket">
+                    <div class="ticket__owner">
+                        <div class="ticket__owner--photo">
+                           <img class="imgAva" src="assets/img/ava2.png" alt="ava1">
+                        </div>
+                      
+                        <div class="ticket__owner--descr">
+                            <p class="ticket__title">Adding Images to Featured Posts</p>
+                            <p class="ticket__subtitle">Updated 1 day ago</p>
+                        </div>    
+                    </div>
+                    
+                    <div class="ticket__descr--name">
+                            <p class="ticket__title">Matt Damon</p>
+                            <p class="ticket__subtitle">on 24.05.2019</p>
+                    </div>
+                    <div class="ticket__descr--date">
+                            <p class="ticket__title">May 26, 2019</p>
+                            <p class="ticket__subtitle">8:00 AM</p>
+                     </div>
+                    <div class="ticket__descr--priority ">
+                        <span class="priority orange">low</span>
+                            
+                    </div>
+                    <div class="ticket__descr--menu">
+                            I
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket__owner">
+                        <div class="ticket__owner--photo">
+                           <img class="imgAva" src="assets/img/ava3.png" alt="ava1">
+                        </div>
+                      
+                        <div class="ticket__owner--descr">
+                            <p class="ticket__title">When will I be charged this month?</p>
+                            <p class="ticket__subtitle">Updated 1 day ago</p>
+                        </div>    
+                    </div>
+                    
+                    <div class="ticket__descr--name">
+                            <p class="ticket__title">Robert Downey</p>
+                            <p class="ticket__subtitle">on 24.05.2019</p>
+                    </div>
+                    <div class="ticket__descr--date">
+                            <p class="ticket__title">May 26, 2019</p>
+                            <p class="ticket__subtitle">7:30 PM</p>
+                     </div>
+                    <div class="ticket__descr--priority ">
+                        <span class="priority red">high</span>
+                            
+                    </div>
+                    <div class="ticket__descr--menu">
+                            I
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket__owner">
+                        <div class="ticket__owner--photo">
+                           <img class="imgAva" src="assets/img/ava4.png" alt="ava1">
+                        </div>
+                      
+                        <div class="ticket__owner--descr">
+                            <p class="ticket__title">Payment not going through</p>
+                            <p class="ticket__subtitle">Updated 2 days ago</p>
+                        </div>    
+                    </div>
+                    
+                    <div class="ticket__descr--name">
+                            <p class="ticket__title">Christian Bale</p>
+                            <p class="ticket__subtitle">on 24.05.2019</p>
+                    </div>
+                    <div class="ticket__descr--date">
+                            <p class="ticket__title">May 25, 2019</p>
+                            <p class="ticket__subtitle">5:00 PM</p>
+                     </div>
+                    <div class="ticket__descr--priority ">
+                        <span class="priority green">normal</span>
+                            
+                    </div>
+                    <div class="ticket__descr--menu">
+                            I
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket__owner">
+                        <div class="ticket__owner--photo">
+                           <img class="imgAva" src="assets/img/ava5.png" alt="ava1">
+                        </div>
+                      
+                        <div class="ticket__owner--descr">
+                            <p class="ticket__title">Unable to add replies</p>
+                            <p class="ticket__subtitle">Updated 2 days ago</p>
+                        </div>    
+                    </div>
+                    
+                    <div class="ticket__descr--name">
+                            <p class="ticket__title">Henry Cavil</p>
+                            <p class="ticket__subtitle">on 24.05.2019</p>
+                    </div>
+                    <div class="ticket__descr--date">
+                            <p class="ticket__title">May 25, 2019</p>
+                            <p class="ticket__subtitle">4:00 PM</p>
+                     </div>
+                    <div class="ticket__descr--priority ">
+                        <span class="priority red">high</span>
+                            
+                    </div>
+                    <div class="ticket__descr--menu">
+                            I
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket__owner">
+                        <div class="ticket__owner--photo">
+                           <img class="imgAva" src="assets/img/ava6.png" alt="ava1">
+                        </div>
+                      
+                        <div class="ticket__owner--descr">
+                            <p class="ticket__title">Downtime since last week</p>
+                            <p class="ticket__subtitle">Updated 3 days ago</p>
+                        </div>    
+                    </div>
+                    
+                    <div class="ticket__descr--name">
+                            <p class="ticket__title">Chris Evans</p>
+                            <p class="ticket__subtitle">on 23.05.2019</p>
+                    </div>
+                    <div class="ticket__descr--date">
+                            <p class="ticket__title">May 25, 2019</p>
+                            <p class="ticket__subtitle">2:00 PM</p>
+                     </div>
+                    <div class="ticket__descr--priority ">
+                        <span class="priority green">normal</span>
+                            
+                    </div>
+                    <div class="ticket__descr--menu">
+                            I
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket__owner">
+                        <div class="ticket__owner--photo">
+                           <img class="imgAva" src="assets/img/ava7.png" alt="ava1">
+                        </div>
+                      
+                        <div class="ticket__owner--descr">
+                            <p class="ticket__title">Referral Bonus</p>
+                            <p class="ticket__subtitle">Updated 4 day ago</p>
+                        </div>    
+                    </div>
+                    
+                    <div class="ticket__descr--name">
+                            <p class="ticket__title">Sam Smith</p>
+                            <p class="ticket__subtitle">on 22.05.2019</p>
+                    </div>
+                    <div class="ticket__descr--date">
+                            <p class="ticket__title">May 25, 2019</p>
+                            <p class="ticket__subtitle">11:30 AM</p>
+                     </div>
+                    <div class="ticket__descr--priority ">
+                        <span class="priority orange">low</span>
+                            
+                    </div>
+                    <div class="ticket__descr--menu">
+                            I
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="ticket__owner">
+                        <div class="ticket__owner--photo">
+                           <img class="imgAva" src="assets/img/ava8.png" alt="ava1">
+                        </div>
+                      
+                        <div class="ticket__owner--descr">
+                            <p class="ticket__title">How do I change my password?</p>
+                            <p class="ticket__subtitle">Updated 6 days ago</p>
+                        </div>    
+                    </div>
+                    
+                    <div class="ticket__descr--name">
+                            <p class="ticket__title">Steve Rogers</p>
+                            <p class="ticket__subtitle">on 21.05.2019</p>
+                    </div>
+                    <div class="ticket__descr--date">
+                            <p class="ticket__title">May 24, 2019</p>
+                            <p class="ticket__subtitle">1:00 PM</p>
+                     </div>
+                    <div class="ticket__descr--priority ">
+                        <span class="priority green">normal</span>
+                            
+                    </div>
+                    <div class="ticket__descr--menu">
+                            I
+                    </div>
+                </div>
+                
+            </div>
+            <div class="allTickets__page">
+                <label class="allTickets__page--label">
+                    Rows per page:
+                    <select value="8" name="pages" class="allTickets__page--select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </label>
+                <div class="allTickets__page--info">
+                    <span >1-8 of 1240</span>
+                    <button class="allTickets__page--btnPrev"></button>
+                    <button class="allTickets__page--btnNext"></button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
 </body>
 </html>
+

@@ -1,0 +1,57 @@
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 63px;
+    
+    flex-wrap: wrap;
+   
+    &__item{
+        width: 258px;
+        padding: 24px 32px;
+        background: #fff;
+        border: 2px solid #DFE0EB;
+        border-radius: 8px;
+        
+        &--title{
+            width: 100%;
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.4px;
+            color: #9FA2B4;
+           
+            
+
+        }
+        &--value{
+            width: 100%;
+            padding-top: 10px;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: $main__color--black;
+            
+        }
+        &:hover{
+            cursor: pointer;
+            border: 2px solid #3751FF;
+            .filter__item--title{
+                color:#3751FF ;
+            }
+            .filter__item--value{
+                color:#3751FF ;
+            }
+     
+        }
+
+
+
+
+
+    }
+
+    
+}   

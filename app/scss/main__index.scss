@@ -1,0 +1,35 @@
+.main{
+    width: 100%;
+    padding: 36px 33px 32px 30px;
+    background: #F7F8FC;
+    color: $main__color--black;
+   
+}
+.vector{
+    position: relative;
+    right: 7px;
+    bottom: -3px;
+    
+}
+.search{
+    margin-right: 26px;
+}
+.user__photo{
+    max-width: 63px;
+    max-height: 42px;
+    border: 1px ;
+    clip-path: circle(37.4% at 50% 50%);
+    &--border{
+        
+        position: absolute;
+        right: 8px;
+    }
+    &--title{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: right;
+        letter-spacing: 0.2px;
+        color:$main__color--black; 
+    }
+}

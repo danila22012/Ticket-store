@@ -1,0 +1,93 @@
+.aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 255px;
+    padding-top: 36px;
+    background: #363740;
+    
+    &__logo{
+        margin-left: 33px;
+        margin-right: 75px;
+        display: flex;
+        align-items: center;
+        &--d{
+            position: relative;
+            height: 32px;
+            width: 32px;
+            border-radius: 20px;
+            background: #3751FF;
+            margin-right: 12px;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 9px;
+                right: 8px;
+                width: 12px;
+                height: 14px;
+                background:  rgba(255, 255, 255, 0.7);
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+            }
+        }
+        &--text{
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 24px;
+            color: $sidebar__color;
+        }
+    }
+    &__list{
+        margin-top: 63px;
+        list-style: none;
+        &--item{
+           
+            
+
+            &:hover{
+                background:#3f4049;
+                border-left: 3px solid #DDE2FF;
+                .aside__list--a{
+                    color: #DDE2FF;
+                    padding-left:29px;
+                }
+                .list__icon--opacity{
+                    opacity: 1;
+                }
+                
+            }
+            
+
+            & a{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 18px 0;
+                padding-left:32px;
+                
+                
+                text-decoration: none;
+                color: $sidebar__color;
+            }
+        } 
+
+    }
+    &__options{
+        border-top: 1px solid #DFE0EB;
+        display: flex;
+        align-items: center;
+        padding: 18px 0;
+        padding-left:32px;
+          
+        text-decoration: none;
+        color: $sidebar__color;
+        &--img{
+            margin-right: 24px;
+        }
+    }
+}
+.list__icon{
+    margin-right: 24px;
+}

@@ -1,3 +1,11 @@
 // only imports here
-
+@import "normalize.scss";
 @import "global";
+@import "variables.scss";
+@import "aside.scss";
+@import "main__index.scss";
+
+@import "filter.scss";
+@import "headerTop.scss";
+@import "tasks.scss";
+@import "allTickets.scss";
